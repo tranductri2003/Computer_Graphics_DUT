@@ -1,0 +1,79 @@
+# Project: Lab01
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = lab01hcn.o lab01tamgiac.o lab01tudien.o Lab01hinhcau.o lab01BT1.o lab01BT2.o lab01BT3.o lab01BT4.1SinCurve.o lab01BT4.2CosCurve.o lab01BT4.3.o lab01BT4.4.o lab01BT4.5.o lab01BT4.6.o lab01BT4.7.o lab01BT4.8.o lab01BT5.o lab01BT6.o lab01BT7.o
+LINKOBJ  = lab01hcn.o lab01tamgiac.o lab01tudien.o Lab01hinhcau.o lab01BT1.o lab01BT2.o lab01BT3.o lab01BT4.1SinCurve.o lab01BT4.2CosCurve.o lab01BT4.3.o lab01BT4.4.o lab01BT4.5.o lab01BT4.6.o lab01BT4.7.o lab01BT4.8.o lab01BT5.o lab01BT6.o lab01BT7.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -lopengl32 -lfreeglut -lglu32
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = Lab1.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+lab01hcn.o: lab01hcn.cpp
+	$(CPP) -c lab01hcn.cpp -o lab01hcn.o $(CXXFLAGS)
+
+lab01tamgiac.o: lab01tamgiac.cpp
+	$(CPP) -c lab01tamgiac.cpp -o lab01tamgiac.o $(CXXFLAGS)
+
+lab01tudien.o: lab01tudien.cpp
+	$(CPP) -c lab01tudien.cpp -o lab01tudien.o $(CXXFLAGS)
+
+Lab01hinhcau.o: Lab01hinhcau.cpp
+	$(CPP) -c Lab01hinhcau.cpp -o Lab01hinhcau.o $(CXXFLAGS)
+
+lab01BT1.o: lab01BT1.cpp
+	$(CPP) -c lab01BT1.cpp -o lab01BT1.o $(CXXFLAGS)
+
+lab01BT2.o: lab01BT2.cpp
+	$(CPP) -c lab01BT2.cpp -o lab01BT2.o $(CXXFLAGS)
+
+lab01BT3.o: lab01BT3.cpp
+	$(CPP) -c lab01BT3.cpp -o lab01BT3.o $(CXXFLAGS)
+
+lab01BT4.1SinCurve.o: lab01BT4.1SinCurve.cpp
+	$(CPP) -c lab01BT4.1SinCurve.cpp -o lab01BT4.1SinCurve.o $(CXXFLAGS)
+
+lab01BT4.2CosCurve.o: lab01BT4.2CosCurve.cpp
+	$(CPP) -c lab01BT4.2CosCurve.cpp -o lab01BT4.2CosCurve.o $(CXXFLAGS)
+
+lab01BT4.3.o: lab01BT4.3.cpp
+	$(CPP) -c lab01BT4.3.cpp -o lab01BT4.3.o $(CXXFLAGS)
+
+lab01BT4.4.o: lab01BT4.4.cpp
+	$(CPP) -c lab01BT4.4.cpp -o lab01BT4.4.o $(CXXFLAGS)
+
+lab01BT4.5.o: lab01BT4.5.cpp
+	$(CPP) -c lab01BT4.5.cpp -o lab01BT4.5.o $(CXXFLAGS)
+
+lab01BT4.6.o: lab01BT4.6.cpp
+	$(CPP) -c lab01BT4.6.cpp -o lab01BT4.6.o $(CXXFLAGS)
+
+lab01BT4.7.o: lab01BT4.7.cpp
+	$(CPP) -c lab01BT4.7.cpp -o lab01BT4.7.o $(CXXFLAGS)
+
+lab01BT4.8.o: lab01BT4.8.cpp
+	$(CPP) -c lab01BT4.8.cpp -o lab01BT4.8.o $(CXXFLAGS)
+
+lab01BT5.o: lab01BT5.cpp
+	$(CPP) -c lab01BT5.cpp -o lab01BT5.o $(CXXFLAGS)
+
+lab01BT6.o: lab01BT6.cpp
+	$(CPP) -c lab01BT6.cpp -o lab01BT6.o $(CXXFLAGS)
+
+lab01BT7.o: lab01BT7.cpp
+	$(CPP) -c lab01BT7.cpp -o lab01BT7.o $(CXXFLAGS)
