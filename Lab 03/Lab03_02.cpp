@@ -163,7 +163,7 @@ void display(){
 	printpoint(MatrixKQ);
 }
 int main(){
-	
+	cout << "MSSV: 102210096" << endl;
 	float x,y,z;
 	cout<<"Nhap toa do diem: "<<endl<<"=>";
 	cin>>x>>y>>z;
@@ -171,3 +171,4 @@ int main(){
 	display();
 	return 0;
 }
+

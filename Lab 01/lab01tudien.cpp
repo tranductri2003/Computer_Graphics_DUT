@@ -68,7 +68,7 @@
 //	glutInitWindowSize(500, 500);
 //	
 //	glutInitWindowPosition(100, 100);
-//	glutCreateWindow("Draw Tetrahedron");
+//	glutCreateWindow("Draw Tetrahedron - Tran Duc Tri - 102210096");
 //   
 //   	init();
 //   	glutDisplayFunc(drawTetrahedron);

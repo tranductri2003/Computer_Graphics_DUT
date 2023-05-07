@@ -87,7 +87,7 @@ int main(int argc, char**argv)
 	glutInitWindowSize(500, 500);
 	glutInitWindowPosition(100, 100);
 
-	glutCreateWindow("Draw Flower");
+	glutCreateWindow("Draw Flower - 102210096 - TranDucTri");
 	
 	init();
 	glutDisplayFunc(drawFlower);

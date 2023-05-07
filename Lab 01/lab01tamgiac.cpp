@@ -31,7 +31,7 @@
 //	glutInitWindowSize(250, 250);
 //	
 //	glutInitWindowPosition(100, 100);
-//	glutCreateWindow("Draw Triangle");
+//	glutCreateWindow("Draw Triangle - Tran Duc Tri - 102210096");
 //	
 //	init();
 //	glutDisplayFunc(drawTriangle);
